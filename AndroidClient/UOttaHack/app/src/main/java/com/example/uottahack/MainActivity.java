@@ -40,8 +40,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 // TODO Auto-generated method stub
-
-                microphone.setImageResource(R.drawable.
+                // TODO: Change microphone colour
+                // microphone.setImageResource(...);
 
                 switch(event.getAction()){
                     case MotionEvent.ACTION_DOWN:
