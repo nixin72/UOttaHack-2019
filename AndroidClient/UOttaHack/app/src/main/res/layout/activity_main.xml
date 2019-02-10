@@ -6,15 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageButton
-        android:id="@+id/michael"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="96dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/michael" />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="56dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="163dp"
+            tools:layout_editor_absoluteY="442dp" />
+
+        <ImageButton
+            android:id="@+id/microphoneBTN"
+            android:layout_width="208dp"
+            android:layout_height="314dp"
+            android:scaleType="fitCenter"
+            app:srcCompat="@android:drawable/ic_btn_speak_now"
+            tools:layout_editor_absoluteX="88dp"
+            tools:layout_editor_absoluteY="97dp" />
+
+    </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
