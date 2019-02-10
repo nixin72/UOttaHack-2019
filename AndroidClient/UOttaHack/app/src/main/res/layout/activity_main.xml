@@ -1,35 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="0dp"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        tools:layout_editor_absoluteX="102dp"
-        tools:layout_editor_absoluteY="56dp">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="TextView"
-            tools:layout_editor_absoluteX="163dp"
-            tools:layout_editor_absoluteY="442dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/button"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="37dp"
+        />
 
-        <ImageButton
-            android:id="@+id/microphoneBTN"
-            android:layout_width="208dp"
-            android:layout_height="314dp"
-            android:scaleType="fitCenter"
-            app:srcCompat="@android:drawable/ic_btn_speak_now"
-            tools:layout_editor_absoluteX="88dp"
-            tools:layout_editor_absoluteY="97dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/button"
+        android:layout_centerHorizontal="true"
+        />
 
-    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:id="@+id/button3"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
 
-</android.support.constraint.ConstraintLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STOP PLAYING RECORDING "
+        android:id="@+id/button4"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        />
+</RelativeLayout>
