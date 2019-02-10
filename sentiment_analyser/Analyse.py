@@ -74,7 +74,7 @@ def buttonClick():
     r.energy_threshold = 400
     with sr.Microphone() as source:
         try:
-            audio = r.listen(source, timeout=9)
+            audio = r.listen(source, timeout=7)
             #message = str(r.recognize_google(audio))
             mixer.music.load('chime2.mp3')
             mixer.music.play()
